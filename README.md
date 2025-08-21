@@ -1,5 +1,4 @@
 # TravelGo - Client
----
 
 The **TravelGo Client** is the frontend of the TravelGo travel booking platform.  
 It is built with **React** and **Tailwind CSS**, providing a modern, responsive, and intuitive UI for searching trips, browsing hotels, exploring tourist attractions, and interacting with a simple chatbot.
