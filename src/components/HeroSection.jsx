@@ -12,7 +12,7 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="relative min-h-[80svh] md:min-h-[100svh] overflow-hidden">
+    <section className="relative max-w-[100vw] min-h-[80svh] md:min-h-[100svh] overflow-hidden">
       {/* background */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500" />
       <div
@@ -29,12 +29,13 @@ export default function HeroSection() {
               Find your next perfect <span className="text-cyan-200">stay</span>
             </h1>
             <p className="mt-4 text-white/90 text-lg">
-              Search destinations, compare top hotels, and snag exclusive prices.
+              Search destinations, compare top hotels, and snag exclusive
+              prices.
             </p>
 
             {/* Search card */}
-            <div className="my-5">
-              <SearchBar/>
+            <div className="my-5 max-w-[90vw] w-full">
+              <SearchBar />
             </div>
           </div>
 

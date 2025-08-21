@@ -169,7 +169,10 @@ export default function SearchBar({ fetcher, onSelect }) {
   const showDropdown = open && (loading || items.length > 0 || city.trim());
 
   return (
-    <div ref={wrapperRef} className="relative w-full">
+    <div
+      ref={wrapperRef}
+      className="relative w-full max-w-full overflow-x-clip"
+    >
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -213,7 +216,7 @@ export default function SearchBar({ fetcher, onSelect }) {
         {/* Submit */}
         <button
           type="submit"
-          className="inline-flex items-center gap-2 cursor-pointer rounded-xl bg-blue-600 px-4 sm:px-5 py-2 font-semibold text-white hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+          className="inline-flex items-center text-sm md:text-base gap-2 cursor-pointer rounded-xl bg-blue-600 px-4 sm:px-5 py-2 font-semibold text-white hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
         >
           <svg
             width="18"
