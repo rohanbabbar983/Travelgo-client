@@ -1,12 +1,67 @@
-# React + Vite
+# TravelGo - Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **TravelGo Client** is the frontend of the TravelGo travel booking platform.  
+It is built with **React** and **Tailwind CSS**, providing a modern, responsive, and intuitive UI for searching trips, browsing hotels, exploring tourist attractions, and interacting with a simple chatbot.
+---
+## Live Demo
+Check out the live site: 
+---
+## Features
+- **Search Functionality** – Search trips by city name.  
+- **Hotel Listings** – View hotels with details like price, rating, image, and description.  
+- **City Attractions** – Explore top tourist places with images and descriptions.  
+- **Chatbot Assistant** – Simple rule-based chatbot for quick travel queries.  
+- **Responsive Design** – Works seamlessly on mobile and desktop.
+  
+---
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js** – Frontend framework  
+- **Tailwind CSS** – Styling & responsive design  
+- **Axios / Fetch API** – API calls to the backend  
+- **React Router** – Navigation between pages
+  
+---
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository
+    ```bash
+    git clone https://github.com/rohanbabbar983/Travelgo-client.git
+    cd Travelgo-client
+    ```
+
+2. Install dependencies
+    ```bash
+    npm install
+    ```
+
+3. Create a `.env` file in the root directory and add the necessary environment variables:
+    ```env
+    VITE_BACKEND_URL=http://localhost:5000 || your_base_url_backend
+    ```
+
+4. Start the development server
+    ```bash
+    npm run dev
+    ```
+---
+
+## Usage
+
+Visit `http://localhost:5173` to see the application in action.
+
+---
+
+## Known Issues
+
+- Limited chatbot logic (rule-based only).
+- No real-time hotel availability (static data/demo API).
+
+---
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
