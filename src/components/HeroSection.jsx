@@ -12,7 +12,7 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="relative max-w-[100vw] min-h-[80svh] md:min-h-[100svh] overflow-hidden">
+    <section className="relative max-w-[100vw] min-h-[80svh] md:min-h-[50svh] xl:min-h-[100svh] overflow-hidden">
       {/* background */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500" />
       <div
@@ -20,7 +20,7 @@ export default function HeroSection() {
         className="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full blur-3xl opacity-30 bg-cyan-300"
       />
       <div className={`${container} py-14 sm:py-20`}>
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="grid xl:grid-cols-2 gap-10 items-center">
           <div className="text-white">
             <p className="inline-block rounded-full bg-white/10 px-3 py-1 text-sm backdrop-blur">
               New • Hand-picked stays & deals
@@ -40,7 +40,7 @@ export default function HeroSection() {
           </div>
 
           {/* image side */}
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <div className="relative">
               <img
                 alt="Travel collage"
